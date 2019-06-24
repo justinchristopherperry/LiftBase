@@ -4,7 +4,7 @@ class Program(models.Model):
     username = models.CharField(max_length=25)
     program = models.CharField(max_length=50)
     version = models.IntegerField(blank=True, null=True)
-    description = models.TextField(blank=True)
+    description = models.TextField()
     date = models.DateTimeField(blank=True, null=True)
     lifts = models.ManyToManyField('Lift', blank=True)
 

@@ -1,6 +1,24 @@
-<h1>
-    {{program.program}}
-</h1>
-<body>
-    By, {{program.username}}.
-</body>
+<div>
+    <h3>{{ program.program }}</h3>
+
+    <p>Uploaded by: {{ program.username }}</p>
+
+    {% if program.date %}
+    <p>Start Date: {{ program.date|date:"M Y" }}</p>
+    {% endif %}
+
+    {% if program.version %}
+    <p>Version Number: {{ program.version }}</p>
+    {% endif %}
+
+    <p>{{ program.description }}</p>
+
+    {% if program.lifts.all %}
+    <p>Lifts Included:</p>
+    <ul>
+        {% for lift in program.lifts.all %}
+        <li>{{ lift.exercise }}</li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+</div>

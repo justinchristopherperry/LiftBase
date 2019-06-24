@@ -4,8 +4,8 @@ from django.http import HttpResponse, Http404
 from .models import Program, Lift
 
 def home(request):
-    allPrograms = Program.objects.all()
-    return render(request, 'home.html', {'allPrograms': allPrograms})
+    all_programs = Program.objects.all()
+    return render(request, 'home.html', {'all_programs': all_programs})
 
 def program_detail(request, id):
     try:
