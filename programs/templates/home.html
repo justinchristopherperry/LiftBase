@@ -1,3 +1,5 @@
+{% extends "base.html" %}
+{% block content %}
 <div>
     {% for program in all_programs %}
         <div class="program_listing">
@@ -19,3 +21,4 @@
         </div>
     {% endfor %}
 </div>
+{% endblock %}
