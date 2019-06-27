@@ -1,0 +1,24 @@
+html {
+    background: rgb(230, 230, 230);
+}
+
+body {
+    font-family: "Trebuchet MS",Helvetica, sans-serif;
+}
+
+.header_title {
+    color:  rgb(230, 230, 230);
+    text-align: center;
+    background: rgb(150, 0, 0);
+    padding: 30px;
+    border-radius: 25px;
+}
+
+.program_listing {
+    padding: 5px;
+    border-radius: 25px;
+    border-color: rgb(150, 0, 0);
+    border-width: 5px;
+    border-style: solid;
+    margin-bottom: 10px;
+}

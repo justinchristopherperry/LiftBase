@@ -8,11 +8,11 @@
             </a>
 
             {% if program.version %}
-                <p> Version: {{ program.version }} </p>
+            <p> Version: {{ program.version }} </p>
             {% endif %}
 
             {% if program.date %}
-            <p> Date: {{ program.date }} </p>
+            <p> Date: {{ program.date|date:"M Y"  }} </p>
             {% endif %}
 
             <p> By, {{ program.username }} </p>
