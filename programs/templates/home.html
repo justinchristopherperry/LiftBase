@@ -15,9 +15,7 @@
             <p> Date: {{ program.date|date:"M Y"  }} </p>
             {% endif %}
 
-            <p> By, {{ program.username }} </p>
-
-            <p class="hidden"> {{ program.description }} </p>
+            <p> Authored by: {{ program.username }} </p>
         </div>
     {% endfor %}
 </div>

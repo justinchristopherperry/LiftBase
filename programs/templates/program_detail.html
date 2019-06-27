@@ -1,9 +1,9 @@
 {% extends "base.html" %}
 {% block content %}
-<div>
+<div class="program_page">
     <h3>{{ program.program }}</h3>
 
-    <p>Uploaded by: {{ program.username }}</p>
+    <p>Authored by: {{ program.username }}</p>
 
     {% if program.date %}
     <p>Start Date: {{ program.date|date:"M Y" }}</p>

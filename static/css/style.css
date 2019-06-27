@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    font-family: "Trebuchet MS",Helvetica, sans-serif;
+    font-family: sans-serif,"Trebuchet MS",Helvetica;
 }
 
 .header_title {
@@ -21,4 +21,12 @@ body {
     border-width: 5px;
     border-style: solid;
     margin-bottom: 10px;
+}
+
+.program_page {
+    padding: 5px;
+    border-radius: 25px;
+    border-color: rgb(150, 0, 0);
+    border-width: 5px;
+    border-style: solid;
 }
