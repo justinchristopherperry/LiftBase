@@ -14,14 +14,5 @@
     {% endif %}
 
     <p>{{ program.description }}</p>
-
-    {% if program.lifts.all %}
-    <p>Lifts Included:</p>
-    <ul>
-        {% for lift in program.lifts.all %}
-        <li>{{ lift.exercise }}</li>
-        {% endfor %}
-    </ul>
-    {% endif %}
 </div>
 {% endblock %}

@@ -24,7 +24,7 @@ database with tables"""
 
 class Command(BaseCommand):
     # Show this when the user types help
-    help = "Loads data from program_data.csv into our Program model"
+    help = "Loads data from program_data.csv into my Program model"
 
     def handle(self, *args, **options):
         if Lift.objects.exists() or Program.objects.exists():

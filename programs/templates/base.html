@@ -5,8 +5,16 @@
         <title>Home - LiftBase</title>
         <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" >
     </head>
-    <div>
-        <h1 class="header_title">LiftBase</h1>
+    <div class="header">
+        <div class="header_left">
+            <div class="title">LiftBase</div>
+            <div class="subtitle">A project by Justin Perry</div>
+        </div>
+        <div class="header_right">
+            <a href="{% url 'home' %}" class="nav_link">Programs</a>
+            <a href="{% url 'upload' %}" class="nav_link">Upload</a>
+            <a href="{% url 'home' %}" class="nav_link">Contact</a>
+        </div>
     </div>
     {% block content %}
     {% endblock %}

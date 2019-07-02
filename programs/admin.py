@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Program, Lift
+from .models import Program
 
 @admin.register(Program)
 class ProgramAdmin(admin.ModelAdmin):
