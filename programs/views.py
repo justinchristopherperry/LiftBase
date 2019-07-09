@@ -1,6 +1,7 @@
 from django.shortcuts import render
-from django.http import HttpResponse, Http404
+from django.http import HttpResponse, HttpResponseRedirect, Http404
 from .models import Program
+from .forms import ProgramForm
 
 def home(request):
     all_programs = Program.objects.all()
@@ -14,5 +15,13 @@ def program_detail(request, id):
     return render(request, 'program_detail.html', {'program': program})
 
 def upload(request):
-    testProgram = Program.objects.get(id=4)
-    return render(request, 'program_detail.html', {'program': testProgram})
+
+    if request.method == 'POST':
+        form = ProgramForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return HttpResponseRedirect('/')
+    else:
+        form = ProgramForm()
+
+    return render(request, 'upload.html', {'form': form})
