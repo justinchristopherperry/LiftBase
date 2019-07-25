@@ -1,5 +1,5 @@
 # LiftBase
-LiftBase is a Django web application for storing and accessing training programs.
+LiftBase is a Django web application for storing, sharing, and accessing workout training programs.
 
 To run the web application, clone/download the repository to your machine and open a terminal. Navigate into the `LiftBase` directory.
 
