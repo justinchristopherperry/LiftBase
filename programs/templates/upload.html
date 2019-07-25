@@ -1,11 +1,8 @@
 {% extends "base.html" %}
 {% block content %}
 {% load widget_tweaks %}
-<div class="upload_body">
-    Thanks for sharing a program! By doing so, you've helped make LiftBase a better resource. Happy Lifting!
-</div>
-<div class="upload_form_header">Program Details
-</div>
+
+<div class="upload_form_header" align="center">Program Details</div>
 
 <form action="/upload/" method="post">
     {% csrf_token %}

@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% block content %}
-<div>
+<div class="all_programs">
     {% for program in all_programs %}
         <div class="program_listing">
             <a href="{% url 'program_detail' program.id %}">

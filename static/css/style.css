@@ -48,13 +48,18 @@ body {
     color: rgb(150, 0, 0);
 }
 
+.all_programs {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 20px;
+}
+
 .program_listing {
     padding: 5px;
     border-radius: 25px;
     border-color: rgb(150, 0, 0);
     border-width: 5px;
     border-style: solid;
-    margin-bottom: 10px;
 }
 
 .program_page {
@@ -65,23 +70,22 @@ body {
     border-style: solid;
 }
 
-.upload_body {
-    padding: 15px;
-    text-align: center;
-    font-style: italic;
-    font-weight: bold;
-}
-
 .upload_form_header {
+    padding-top: 10px;
     padding-bottom: 10px;
     font-size: 25px;
     font-weight: bold;
-    position: relative;
-    width: fit-content;
+    margin: auto;
+    width: 40%;
     border-bottom: 3px solid rgb(150, 0, 0);
     margin-bottom: 25px;
 }
 
 .upload_form_field_label {
     font-style: italic;
+    font-weight: bold;
+    padding: 5px;
+}
+.upload_form_field {
+    padding: 5px;
 }

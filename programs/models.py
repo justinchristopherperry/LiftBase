@@ -8,9 +8,9 @@ class Program(models.Model):
     description = models.TextField()
     date = models.DateTimeField(blank=True, null=True)
 
-class ProgramForm(ModelForm):
-    class Meta:
-        model = Program
-        fields = ['username', 'program', 'version', 'description', 'date']
+# class ProgramForm(ModelForm):
+#     class Meta:
+#         model = Program
+#         fields = ['username', 'program', 'version', 'description', 'date']
 
 
