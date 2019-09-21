@@ -20,8 +20,14 @@ def upload(request):
         form = ProgramForm(request.POST)
         if form.is_valid():
             form.save()
-            return HttpResponseRedirect('/')
+            return HttpResponseRedirect('/upload/thank_you/')
     else:
         form = ProgramForm()
 
     return render(request, 'upload.html', {'form': form})
+
+def thank_you(request):
+    return render(request, 'thank_you.html')
+
+def contact(request):
+    return render(request, 'contact.html')

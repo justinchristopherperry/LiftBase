@@ -2,6 +2,8 @@ html {
     background: white;
 }
 
+/* BASE SITE HEADER */
+
 body {
     font-family: 'Arial Narrow Bold', Helvetica, sans-serif,"Trebuchet MS";
 }
@@ -48,6 +50,8 @@ body {
     color: rgb(150, 0, 0);
 }
 
+/* HOMEPAGE (ALL PROGRAMS) */
+
 .all_programs {
     display: grid;
     grid-template-columns: auto auto;
@@ -70,6 +74,8 @@ body {
     border-style: solid;
 }
 
+/* UPLOAD PAGE */
+
 .upload_form_header {
     padding-top: 10px;
     padding-bottom: 10px;
@@ -88,4 +94,56 @@ body {
 }
 .upload_form_field {
     padding: 5px;
+}
+
+/* THANK YOU PAGE */
+
+.thank_you_header {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    margin: auto;
+    width: 40%;
+    border-bottom: 3px solid rgb(150, 0, 0);
+    margin-bottom: 25px;
+}
+
+.thank_you_body {
+    font-style: italic;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.nav_link_return {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 10px;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    background: rgb(150, 0, 0);
+    text-decoration: none;
+    font-size: 15px;
+    text-align: center;
+}
+
+/* CONTACT PAGE */
+
+.contact_header {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    margin: auto;
+    width: 40%;
+    border-bottom: 3px solid rgb(150, 0, 0);
+    margin-bottom: 25px;
+}
+
+.contact_body {
+    font-style: italic;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
 }

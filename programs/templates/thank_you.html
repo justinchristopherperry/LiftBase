@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="thank_you_header" align="center">Thank You!</div>
+
+<div class="thank_you_body">
+    By uploading a program to our database, you have improved LiftBase for everyone.
+    Happy training!
+</div>
+
+<p align="center">
+    <a href="{% url 'home' %}" class="nav_link_return">Return to Program Directory</a>
+</p>
+
+{% endblock %}
