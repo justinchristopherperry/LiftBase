@@ -7,4 +7,4 @@ Having Python 3 and Django installed, run the command:
 ```
 python3 manage.py runserver
 ```
-Navigate to `localhost:8000` on a web browser. Enjoy!
+Navigate to the dedicated ```localhost``` on a web browser. Enjoy!
